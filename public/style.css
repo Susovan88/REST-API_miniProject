@@ -1,0 +1,135 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.head{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+#search{
+    height: 40px;
+    width: 400px;
+    border-radius: 1rem;
+}
+.btn1{
+    border-radius: 0.5rem;
+    color: rgb(36, 119, 244);
+    background-color: white;
+    border: 3px solid rgb(36, 119, 244);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px;
+    margin-right: 20px;
+}
+.btn2{
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(36, 119, 244);
+    border: 3px solid black;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7px;
+    margin-right: 20px;
+}
+.posts{
+    position: absolute;
+    top: 80px;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.post{
+    height: 400px;
+    width: 450px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    margin: 20px;
+}
+.img{
+    height:200px;
+}
+.st{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nd{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+.rd{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.username{
+    font-style: italic;
+}
+.user{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.comBox{
+    display: flex;
+    /* justify-content: space-evenly;
+    align-items: center; */
+}
+.dc{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+}
+.box{
+    height: 500px;
+    width: 500px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.comments{
+    height: 350px;
+    width: 350px;
+
+}
+.com{
+    margin-bottom: 30px;
+}
+.edit{
+    margin: auto;
+    border: 3px solid black;
+    height: 70vh;
+    width: 40vw;
+    background-color:rgb(169, 196, 238) ;
+}
+.new{
+    margin: auto;
+    border: 3px solid black;
+    height: 80vh;
+    width: 60vw;
+    background-color:rgb(169, 196, 238) ;
+}

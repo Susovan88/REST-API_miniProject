@@ -1,0 +1,27 @@
+<%- include("include/head.ejs"); %>
+<div class="posts">
+    <% for(post of posts){ %>
+        <div class="post">
+            <div class="st">
+                <div class="user">
+                    <img class="userImg" style="height: 30px;" src="https://static-00.iconduck.com/assets.00/user-icon-2048x2048-ihoxz4vq.png">
+                    <h3 class="username">@<%= post.username%></h3>
+                </div>
+                <a href="http://localhost:8080/posts/<%=post.id%>"><button class="btn1">Detail</button></a>
+            </div>
+            <div class="nd">            
+                <img src="<%= post.img %>" class="img">
+                <h4 class="content"><%= post.content%></h4>
+            </div>
+            <div class="rd">
+                <a href="http://localhost:8080/posts/<%=post.id%>"><button class="btn1">Comments</button></a>
+                <a href="http://localhost:8080/posts/<%=post.id%>/edit"><button class="btn2">Edit</button></a>
+                <form method="POST" action="/posts/<%= post.id %>?_method=DELETE">
+                    <button type="submit" class="btn1">Delete</button>
+                </form>
+            </div>
+        </div>
+    <%}%>
+</div>
+</body>
+</html>

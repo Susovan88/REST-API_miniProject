@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show In Detail</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 style="color: rgb(36, 119, 244);text-align:center;">Here Your post in detail</h1>
+    <form class="back" method="get" action="/posts">
+        <button class="btn1">Back</button>
+    </form>
+    <div class="dc">
+        <div class="post" style="height: 550px;width: 500px;">
+            <h4>Post ID : <%= post.id %> </h4>
+            <div class="comBox">
+                <img class="userImg" style="height: 30px;" src="https://static-00.iconduck.com/assets.00/user-icon-2048x2048-ihoxz4vq.png">
+                <h2 class="username">@<%= post.username%></h2>
+            </div>
+            <img style="height: 400px;" src="<%= post.img %>" class="img" >
+            <h2 class="content"><%= post.content%></h2>
+        </div>
+        <div class="box">
+            <h1 style="color: rgb(36, 119, 244);">Comments:</h1>
+            <div class="comments">
+                <%for(comment of post.comments){%>
+                    <%if(comment){%>
+                        <div class="comBox">
+                            <img class="userImg" style="height: 30px;" src="https://static-00.iconduck.com/assets.00/user-icon-2048x2048-ihoxz4vq.png">
+                            <h2 class="com"><%=comment%></h2>
+                        </div>
+                    <%}%>
+                <%}%>
+            </div>
+            <form method="post" action="/posts/<%= post.id %>">
+                <textarea rows="4" cols="40" name="comment" id="comment"></textarea>
+                <button class="btn2">Post</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

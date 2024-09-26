@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <h1 style="color: rgb(36, 119, 244);">Create New Post</h1>
+    <div class="new">
+        <form method="post" action="/posts">
+            <p style="font-size: 20px; font-weight: 500;">Username</p>
+            <input style="height: 40px; width: 200px;" placeholder="Enter username" name="username" type="text">
+            <br>
+            <p style="font-size: 20px; font-weight: 500;">Image URL:</p>
+            <textarea rows="10" cols="40" name="img" id="img" placeholder="Enter Your Image link"></textarea>
+            <br>
+            <p style="font-size: 20px; font-weight: 500;">Content</p>
+            <textarea rows="10" cols="40" name="content" id="content" placeholder="Write your post"></textarea>
+            <br>
+            <br>
+            <button class="btn1">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
